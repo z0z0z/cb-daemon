@@ -4,5 +4,7 @@ After=network.target
 
 [Service]
 User=myuser
+Restart=always
+RestartSec=30
 WorkingDirectory=/home/myuser/mydirectory
 ExecStart=/usr/bin/env python3 /usr/local/bin/cb-daemon
