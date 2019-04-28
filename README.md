@@ -12,5 +12,3 @@ Python 3, python-requests, youtube-dl, GNU screen, pgrep
 
 # Info
 This repository contains a very simple python script and a systemd unit file.
-
-It runs an infinite loop, iterates through array of profiles, checks if the profile is online, if it is, uses pgrep to check if we are already downloading the stream, if not, we download the stream through youtube-dl (detaching the process using GNU screen). Sleeps 30 seconds and then restarts infinite loop.
