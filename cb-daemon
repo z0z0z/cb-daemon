@@ -20,7 +20,7 @@ while True:
         room = base_link + profile
         html = requests.get(room).text
 
-        if not "Room is currently offline" in html:
+        if not "room_status\\u0022: \\u0022offline" in html:
 
             if not subprocess.call(["pgrep", "-f", room], stdout=subprocess.DEVNULL) == 0:
 
